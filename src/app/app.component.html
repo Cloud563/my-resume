@@ -35,7 +35,7 @@
             <i class="fas fa-map-marker-alt icon"></i>
             <span>Саратов, Россия</span>
           </div>
-          <div class="contact-item" (click)="scrollToExperience()">
+          <div class="contact-item" (click)="scrollTo('experienceSection')">
             <i class="fas fa-briefcase icon"></i>
             <span>12 лет опыта</span>
           </div>
@@ -50,8 +50,8 @@
       <!-- Левая колонка -->
       <div class="left-column">
         <!-- О себе -->
-        <section class="card">
-          <div class="card-header">
+        <section class="card" id="aboutMeSection">
+          <div class="card-header" (click)="scrollTo('aboutMeSection')">
             <div class="card-icon">
               <i class="fas fa-user"></i>
             </div>
@@ -64,8 +64,8 @@
         </section>
 
         <!-- Желаемая должность -->
-        <section class="card">
-          <div class="card-header">
+        <section class="card" id="positionSection">
+          <div class="card-header" (click)="scrollTo('positionSection')">
             <div class="card-icon">
               <i class="fas fa-bullseye"></i>
             </div>
@@ -90,8 +90,8 @@
         </section>
 
         <!-- Образование -->
-        <section class="card">
-          <div class="card-header">
+        <section class="card" id="educationSection">
+          <div class="card-header" (click)="scrollTo('educationSection')">
             <div class="card-icon">
               <i class="fas fa-graduation-cap"></i>
             </div>
@@ -127,8 +127,8 @@
       <!-- Правая колонка -->
       <div class="right-column">
         <!-- Опыт работы -->
-        <section class="card" id="experience-section">
-          <div class="card-header" (click)="scrollToExperience()">
+        <section class="card" id="experienceSection">
+          <div class="card-header" (click)="scrollTo('experienceSection')">
             <div class="card-icon">
               <i class="fas fa-briefcase"></i>
             </div>
@@ -190,8 +190,8 @@
         </section>
 
         <!-- Навыки -->
-        <section class="card">
-          <div class="card-header">
+        <section class="card" id="skillsSection">
+          <div class="card-header" (click)="scrollTo('skillsSection')">
             <div class="card-icon">
               <i class="fas fa-code"></i>
             </div>

@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +11,8 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'resume-website';
 
-  @ViewChild('experienceSection', { static: false })
-  experienceSection!: ElementRef;
-
-  scrollToExperience() {
-    const element = document.getElementById('experience-section');
+  scrollTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
