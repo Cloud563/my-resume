@@ -1,0 +1,17 @@
+node_modules
+dist
+docs
+coverage
+*.log
+*.svg
+*.ico
+*.eot
+*.ttf
+*.woff
+*.woff2
+package-lock.json
+yarn.lock
+.gitignore
+.git
+.vscode
+.idea
