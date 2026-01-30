@@ -1,0 +1,300 @@
+<div class="resume-container">
+  <!-- Хедер -->
+  <header class="header">
+    <div class="profile-section">
+      <div class="profile-image">
+        <img src="assets/images/photo.JPG" alt="Олег Тарасов" class="photo" />
+      </div>
+
+      <div class="profile-info">
+        <div class="availability">
+          <div class="availability-dot"></div>
+          <span>Открыт для предложений о работе</span>
+        </div>
+
+        <h1 class="name">Олег Тарасов</h1>
+        <h2 class="position">Middle QA Automation</h2>
+
+        <div class="contacts">
+          <div class="contact-item telegram-item" (click)="openTelegram()">
+            <i class="fab fa-telegram icon"></i>
+            <span>tarasovoa</span>
+          </div>
+          <a href="tel:+79271244577" class="contact-item">
+            <i class="fas fa-phone icon"></i>
+            <span>+7 (927) 124-45-77</span>
+          </a>
+          <a
+            href="mailto:mnm6@mail.ru?subject=Предложение о работе&body=Здравствуйте! Пишу по поводу вашего резюме."
+            class="contact-item"
+          >
+            <i class="fas fa-envelope icon"></i>
+            <span>mnm6&#64;mail.ru</span>
+          </a>
+          <div class="contact-item" (click)="openMap()">
+            <i class="fas fa-map-marker-alt icon"></i>
+            <span>Саратов, Россия</span>
+          </div>
+          <div class="contact-item" (click)="scrollToExperience()">
+            <i class="fas fa-briefcase icon"></i>
+            <span>12 лет опыта</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="main-content">
+    <div class="grid-layout">
+      <!-- Левая колонка -->
+      <div class="left-column">
+        <!-- О себе -->
+        <section class="card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <h3 class="card-title">О себе</h3>
+          </div>
+          <div class="card-content">
+            <p>То - сё</p>
+            <p>Пятое - десятое</p>
+          </div>
+        </section>
+
+        <!-- Желаемая должность -->
+        <section class="card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3 class="card-title">Желаемая позиция</h3>
+          </div>
+          <div class="card-content">
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">Должность</span>
+                <span class="info-value">Middle QA Automation</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Зарплата</span>
+                <span class="info-value highlight">от 3 000 000 ₽</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Формат работы</span>
+                <span class="info-value">Удаленно</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Образование -->
+        <section class="card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="card-title">Образование</h3>
+          </div>
+          <div class="card-content">
+            <div class="education-card">
+              <div class="education-content">
+                <div class="education-row">
+                  <h4 class="education-institution">Саратовский государственный университет</h4>
+                </div>
+                <p class="education-period">2005 - 2010</p>
+                <div class="education-info">
+                  <div class="info-row">
+                    <span class="info-label">Факультет:</span>
+                    <span class="info-value">Механико-математический</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label">Специальность:</span>
+                    <span class="info-value">Прикладная информатика в экономике</span>
+                  </div>
+                  <div class="info-row">
+                    <span class="info-label">Профессия:</span>
+                    <span class="info-value">Информатик - экономист</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Правая колонка -->
+      <div class="right-column">
+        <!-- Опыт работы -->
+        <section class="card" id="experience-section">
+          <div class="card-header" (click)="scrollToExperience()">
+            <div class="card-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="card-title">Опыт работы</h3>
+          </div>
+          <div class="card-content">
+            <div class="experience-timeline">
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div>
+                    <img src="assets/images/companies/metib.svg" class="company-logo" />
+                    <h4>Инженер по автоматизированному тестированию</h4>
+                    <span class="experience-period">2024 - настоящее время</span>
+                  </div>
+                </div>
+
+                <ul class="experience-list">
+                  <li>Тестирование гибридного мобильного приложения PWA - Мобильный банк для бизнеса</li>
+                  <li>Написание автоматизированных тестов. Фреймворк Playwright, язык TypeScript</li>
+                  <li>Ведение тестовой документации: тест-кейсы, чек-листы, тест-планы</li>
+                  <li>Ревью требований и макетов</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div>
+                    <img src="assets/images/companies/gazprombank.svg" class="company-logo" />
+                    <h4>Главный инженер по тестированию</h4>
+                    <span class="experience-period">2022 - 2024</span>
+                  </div>
+                </div>
+                <ul class="experience-list">
+                  <li>Тестирование мобильного приложения Мобильный банк для юридических лиц</li>
+                  <li>Написание автоматизированных тестов. Фреймворк Kaspresso, язык Kotlin</li>
+                  <li>Тестирование бэкенда - REST API</li>
+                  <li>Написание моков для тестирования UI</li>
+                  <li>Составления протоколов тестирования ИФТ, ПСИ</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-header">
+                  <div>
+                    <img src="assets/images/companies/rsb.svg" class="company-logo" />
+                    <h4>Главный специалист группы тестирования</h4>
+                    <span class="experience-period">2019 - 2022</span>
+                  </div>
+                </div>
+                <ul class="experience-list">
+                  <li>Тестирование мобильного приложения Мобильный банк для физических лиц</li>
+                  <li>Написание и актуализация тест-кейсов, чек-листов</li>
+                  <li>Подготовка тестовых данных</li>
+                  <li>Разбор дефектов и клиентский обращений, касающихся приложения</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Навыки -->
+        <section class="card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="card-title">Навыки</h3>
+          </div>
+          <div class="card-content">
+            <div class="skills-container">
+              <div class="skill-category">
+                <h5 class="skill-category-title">
+                  <i class="fas fa-paint-brush"></i>
+                  Frontend
+                </h5>
+                <div class="skill-levels">
+                  <div class="skill-level">
+                    <span>Angular</span>
+                    <div class="level-bar">
+                      <div class="level-fill" style="width: 95%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-level">
+                    <span>TypeScript</span>
+                    <div class="level-bar">
+                      <div class="level-fill" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-level">
+                    <span>React</span>
+                    <div class="level-bar">
+                      <div class="level-fill" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="skill-level">
+                    <span>Vue.js</span>
+                    <div class="level-bar">
+                      <div class="level-fill" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h5 class="skill-category-title">
+                  <i class="fas fa-server"></i>
+                  Backend & Tools
+                </h5>
+                <div class="skill-tags">
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">MongoDB</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">Webpack</span>
+                  <span class="skill-tag">Jest</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h5 class="skill-category-title">
+                  <i class="fas fa-users"></i>
+                  Soft Skills
+                </h5>
+                <div class="skill-tags">
+                  <span class="skill-tag soft">Лидерство</span>
+                  <span class="skill-tag soft">Коммуникация</span>
+                  <span class="skill-tag soft">Agile/Scrum</span>
+                  <span class="skill-tag soft">Решение проблем</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/Cloud563?tab=repositories" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://t.me/tarasovoa" target="_blank" class="social-link">
+          <i class="fab fa-telegram"></i>
+          <span>Telegram</span>
+        </a>
+        <a
+          href="https://hh.ru/applicant/resumes/view?resume=cb4e6b28ff01fabed70039ed1f564873747047"
+          target="_blank"
+          class="social-link"
+        >
+          <i class="fas fa-briefcase"></i>
+          <span>HeadHunter</span>
+        </a>
+        <a href="mailto:mnm6@mail.ru" class="social-link">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">© 2026 Олег Тарасов. Все права защищены.</div>
+      </div>
+    </div>
+  </footer>
+</div>

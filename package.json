@@ -1,0 +1,70 @@
+{
+  "name": "my-resume",
+  "version": "1.0.0",
+  "description": "Одностраничное резюме на Angular",
+  "author": "Олег Тарасов",
+  "keywords": [
+    "resume",
+    "angular",
+    "qa",
+    "automation"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --host 0.0.0.0 --port 4200",
+    "start:network": "ng serve --host 0.0.0.0 --disable-host-check",
+    "start:open": "ng serve --host 0.0.0.0 --open",
+    "build": "ng build",
+    "build:prod": "ng build --configuration production",
+    "watch": "ng build --watch --configuration development",
+    "lint": "ng lint",
+    "serve:ssr:my-resume": "node dist/my-resume/server/server.mjs",
+    "format": "prettier --write \"src/**/*.{ts,html,scss,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,html,scss,json}\"",
+    "prepare": "husky install",
+    "lint:staged": "lint-staged",
+    "test": "echo 'No tests configured'"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,html,scss,json,md}": [
+      "prettier --write"
+    ],
+    "src/**/*.ts": [
+      "npm run lint -- --fix"
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^18.2.0",
+    "@angular/common": "^18.2.0",
+    "@angular/compiler": "^18.2.0",
+    "@angular/core": "^18.2.0",
+    "@angular/forms": "^18.2.0",
+    "@angular/platform-browser": "^18.2.0",
+    "@angular/platform-browser-dynamic": "^18.2.0",
+    "@angular/router": "^18.2.0",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.0",
+    "@angular-eslint/builder": "21.0.1",
+    "@angular-eslint/eslint-plugin": "21.0.1",
+    "@angular-eslint/eslint-plugin-template": "21.0.1",
+    "@angular-eslint/schematics": "21.0.1",
+    "@angular-eslint/template-parser": "21.0.1",
+    "@angular/cli": "^18.2.0",
+    "@angular/compiler-cli": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "7.11.0",
+    "@typescript-eslint/parser": "7.11.0",
+    "eslint": "8.57.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
+    "typescript": "~5.4.0"
+  }
+}
