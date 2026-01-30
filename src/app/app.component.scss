@@ -147,6 +147,71 @@
   }
 
   .main-content {
+    .card-content {
+      padding: 24px;
+
+      .text-block {
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      p {
+        color: #cbd5e1;
+        line-height: 1.7;
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .section-title {
+        color: #a5b4fc;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 2rem 0 1rem 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      .bulleted-list {
+        margin: 1.5rem 0;
+        padding-left: 1.8rem;
+
+        li {
+          color: #cbd5e1;
+          line-height: 1.7;
+          margin-bottom: 0.75rem;
+          position: relative;
+
+          &::before {
+            content: '•';
+            color: #7c3aed;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          strong {
+            color: #e2e8f0;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
     .grid-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
