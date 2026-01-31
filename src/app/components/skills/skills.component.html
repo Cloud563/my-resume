@@ -1,0 +1,35 @@
+<section class="card" id="skillsSection">
+  <div
+    class="card-header"
+    tabindex="0"
+    role="button"
+    aria-label="Перейти к разделу навыки"
+    (keydown.enter)="scrollToSection.emit('skillsSection')"
+    (click)="scrollToSection.emit('skillsSection')"
+  >
+    <div class="card-icon">
+      <i class="fas fa-code"></i>
+    </div>
+    <h3 class="card-title">Навыки</h3>
+  </div>
+
+  <div class="card-content">
+    <div class="skills-container">
+      @for (category of skillsCategories; track category.title) {
+        <div class="skill-category">
+          <h5 class="skill-category-title">
+            <i [class]="category.icon"></i>
+            {{ category.title }}
+          </h5>
+          <div class="skill-tags">
+            @for (skill of category.skills; track skill.name) {
+              <span class="skill-tag" [class.soft]="category.title === 'Soft Skills'">
+                {{ skill.name }}
+              </span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

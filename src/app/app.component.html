@@ -196,63 +196,10 @@
         </section>
 
         <!-- Навыки -->
-        <section class="card" id="skillsSection">
-          <div
-            class="card-header"
-            tabindex="0"
-            role="button"
-            aria-label="Перейти к разделу навыки"
-            (keydown.enter)="scrollTo('skillsSection')"
-            (click)="scrollTo('skillsSection')"
-          >
-            <div class="card-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3 class="card-title">Навыки</h3>
-          </div>
-
-          <div class="card-content">
-            <div class="skills-container">
-              <div class="skill-category">
-                <h5 class="skill-category-title">
-                  <i class="fas fa-server"></i>
-                  Технологии и инструменты
-                </h5>
-                <div class="skill-tags">
-                  <span class="skill-tag">SQL</span>
-                  <span class="skill-tag">API</span>
-                  <span class="skill-tag">Postman</span>
-                  <span class="skill-tag">Charles</span>
-                  <span class="skill-tag">Fiddler</span>
-                  <span class="skill-tag">GIT</span>
-                  <span class="skill-tag">Playwright</span>
-                  <span class="skill-tag">TypeScript</span>
-                  <span class="skill-tag">JSON</span>
-                  <span class="skill-tag">Android studio</span>
-                  <span class="skill-tag">QA</span>
-                </div>
-              </div>
-
-              <div class="skill-category">
-                <h5 class="skill-category-title">
-                  <i class="fas fa-users"></i>
-                  Soft Skills
-                </h5>
-                <div class="skill-tags">
-                  <span class="skill-tag soft">Проактивность</span>
-                  <span class="skill-tag soft">Самостоятельность</span>
-                  <span class="skill-tag soft">Адаптивность</span>
-                  <span class="skill-tag soft">Гибкость</span>
-                  <span class="skill-tag soft">Самообучаемость</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <app-skills [skillsCategories]="skillsCategories" (scrollToSection)="scrollTo($event)"> </app-skills>
       </div>
 
       <!-- Правая колонка -->
-
       <div class="right-column">
         <!-- Опыт работы -->
 

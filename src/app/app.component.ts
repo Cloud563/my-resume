@@ -1,18 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { SkillsComponent } from './components/skills/skills.component';
 import { EXPERIENCE_DATA } from './data/experience.data';
+import { SKILLS_DATA } from './data/skills.data';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, ExperienceComponent],
+  imports: [CommonModule, ExperienceComponent, SkillsComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'resume-website';
   experiences = EXPERIENCE_DATA;
+  skillsCategories = SKILLS_DATA;
 
   scrollTo(sectionId: string) {
     const element = document.getElementById(sectionId);
