@@ -1,0 +1,39 @@
+<section class="card" id="experienceSection">
+  <div
+    class="card-header"
+    tabindex="0"
+    role="button"
+    aria-label="Перейти к разделу опыт"
+    (keydown.enter)="scrollToSection.emit('experienceSection')"
+    (click)="scrollToSection.emit('experienceSection')"
+  >
+    <div class="card-icon">
+      <i class="fas fa-briefcase"></i>
+    </div>
+    <h3 class="card-title">Опыт работы</h3>
+  </div>
+
+  <div class="card-content">
+    <div class="experience-timeline">
+      @for (exp of experiences; track exp) {
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <img [src]="exp.logo" [alt]="exp.alt" class="company-logo" />
+              <h4>{{ exp.position }}</h4>
+            </div>
+            <span class="experience-period">{{ exp.period }}</span>
+          </div>
+
+          <ul class="experience-list">
+            @for (responsibility of exp.responsibilities; track responsibility) {
+              <li>
+                {{ responsibility }}
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>

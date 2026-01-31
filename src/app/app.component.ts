@@ -1,15 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EXPERIENCE_DATA } from './data/experience.data';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ExperienceComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'resume-website';
+  experiences = EXPERIENCE_DATA;
 
   scrollTo(sectionId: string) {
     const element = document.getElementById(sectionId);
