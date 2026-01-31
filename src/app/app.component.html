@@ -207,45 +207,7 @@
 
         <!-- Образование -->
 
-        <section class="card" id="educationSection">
-          <div
-            class="card-header"
-            tabindex="0"
-            role="button"
-            aria-label="Перейти к разделу образование"
-            (keydown.enter)="scrollTo('educationSection')"
-            (click)="scrollTo('educationSection')"
-          >
-            <div class="card-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3 class="card-title">Образование</h3>
-          </div>
-          <div class="card-content">
-            <div class="education-card">
-              <div class="education-content">
-                <div class="education-row">
-                  <h4 class="education-institution">Саратовский государственный университет</h4>
-                </div>
-                <p class="education-period">2005 - 2010</p>
-                <div class="education-info">
-                  <div class="info-row">
-                    <span class="info-label">Факультет:</span>
-                    <span class="info-value">Механико-математический</span>
-                  </div>
-                  <div class="info-row">
-                    <span class="info-label">Специальность:</span>
-                    <span class="info-value">Прикладная информатика в экономике</span>
-                  </div>
-                  <div class="info-row">
-                    <span class="info-label">Профессия:</span>
-                    <span class="info-value">Информатик - экономист</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <app-education (scrollToSection)="scrollTo($event)"></app-education>
       </div>
     </div>
   </main>
