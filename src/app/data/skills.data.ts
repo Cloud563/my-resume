@@ -16,6 +16,8 @@ export const SKILLS_DATA: SkillCategory[] = [
       { name: 'JSON' },
       { name: 'Android studio' },
       { name: 'QA' },
+      { name: 'GitLab' },
+      { name: 'CI/CD' },
     ],
   },
   {
@@ -27,6 +29,9 @@ export const SKILLS_DATA: SkillCategory[] = [
       { name: 'Адаптивность' },
       { name: 'Гибкость' },
       { name: 'Самообучаемость' },
+      { name: 'Коммуникация' },
+      { name: 'Критическое мышление' },
+      { name: 'Внимание к деталям' },
     ],
   },
 ];
