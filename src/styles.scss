@@ -6,8 +6,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0;
+  background: #0f0a1a;
+  color: #e2e8f0;
   font-family:
     'Inter',
     -apple-system,
@@ -19,17 +21,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #0f0a1a;
+}
+
+body {
   min-height: 100vh;
-  color: #e2e8f0;
   line-height: 1.6;
+  font-size: 16px;
 }
 
-html {
-  background: #0f0a1a;
-}
-
-/* Утилиты */
 ul {
   list-style: none;
 }

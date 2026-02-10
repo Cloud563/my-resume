@@ -34,22 +34,17 @@
         height: 85px;
         border: 1px solid rgba(139, 92, 246, 0.2);
         text-decoration: none;
+        font-size: 14px;
 
         &:hover {
           background: linear-gradient(135deg, #7c3aed, #a855f7);
           color: white;
           transform: translateY(-5px);
           box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
-          border-color: transparent;
         }
 
         i {
           font-size: 24px;
-        }
-
-        span {
-          font-size: 14px;
-          font-weight: 500;
         }
       }
     }
@@ -87,21 +82,7 @@
         flex: 0 0 calc(50% - 12px);
         min-height: 80px;
         padding: 16px;
-
-        i {
-          font-size: 24px;
-        }
-
-        span {
-          font-size: 14px;
-        }
       }
     }
-  }
-}
-
-@media (max-width: 480px) {
-  .footer .footer-content .social-links {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
