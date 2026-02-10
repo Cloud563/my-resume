@@ -3,6 +3,7 @@ import { Experience } from '../models/experience.model';
 export const EXPERIENCE_DATA: Experience[] = [
   {
     id: 1,
+    name: 'ПАО АКБ «Металлинвестбанк»',
     logo: 'assets/images/companies/metib.svg',
     alt: 'Логотип Металлинвестбанк',
     position: 'Инженер по автоматизированному тестированию',
@@ -17,6 +18,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   },
   {
     id: 2,
+    name: '«Газпромбанк» АО',
     logo: 'assets/images/companies/gazprombank.svg',
     alt: 'Логотип Газпромбанк',
     position: 'Главный инженер по тестированию',
@@ -31,6 +33,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   },
   {
     id: 3,
+    name: 'АО «Банк Русский Стандарт»',
     logo: 'assets/images/companies/rsb.svg',
     alt: 'Логотип Банк Русский стандарт',
     position: 'Главный специалист группы тестирования',
@@ -44,6 +47,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   },
   {
     id: 4,
+    name: 'АО «Банк Русский Стандарт»',
     logo: 'assets/images/companies/rsb.svg',
     alt: 'Логотип Банк Русский стандарт',
     position: 'Ведущий специалист отдела информационной поддержки',
@@ -56,6 +60,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   },
   {
     id: 5,
+    name: 'ПАО «ГМК Норильский никель»',
     logo: 'assets/images/companies/nornikel.svg',
     alt: 'Логотип Норникель',
     position: 'Специалист отдела поддержки пользователей',
@@ -67,6 +72,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   },
   {
     id: 6,
+    name: 'АКБ «Пробизнесбанк»',
     logo: 'assets/images/companies/probusiness.svg',
     alt: 'Логотип Пробизнесбанк',
     position: 'Ведущий специалист отдела поддержки пользователей',
@@ -78,6 +84,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   },
   {
     id: 7,
+    name: 'АО КБ «Солидарность»',
     logo: 'assets/images/companies/solidarnost.svg',
     alt: 'Логотип Банк Солидарность',
     position: 'Ведущий специалист отдела информационной поддержки',
