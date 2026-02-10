@@ -2,7 +2,7 @@ import { Experience } from '../models/experience.model';
 
 export const EXPERIENCE_DATA: Experience[] = [
   {
-    id: 1,
+    id: 7,
     name: 'ПАО АКБ «Металлинвестбанк»',
     logo: 'assets/images/companies/metib.svg',
     alt: 'Логотип Металлинвестбанк',
@@ -17,7 +17,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     ],
   },
   {
-    id: 2,
+    id: 6,
     name: '«Газпромбанк» АО',
     logo: 'assets/images/companies/gazprombank.svg',
     alt: 'Логотип Газпромбанк',
@@ -32,7 +32,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     name: 'АО «Банк Русский Стандарт»',
     logo: 'assets/images/companies/rsb.svg',
     alt: 'Логотип Банк Русский стандарт',
@@ -59,7 +59,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     ],
   },
   {
-    id: 5,
+    id: 3,
     name: 'ПАО «ГМК Норильский никель»',
     logo: 'assets/images/companies/nornikel.svg',
     alt: 'Логотип Норникель',
@@ -71,7 +71,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     ],
   },
   {
-    id: 6,
+    id: 2,
     name: 'АКБ «Пробизнесбанк»',
     logo: 'assets/images/companies/probusiness.svg',
     alt: 'Логотип Пробизнесбанк',
@@ -83,7 +83,7 @@ export const EXPERIENCE_DATA: Experience[] = [
     ],
   },
   {
-    id: 7,
+    id: 1,
     name: 'АО КБ «Солидарность»',
     logo: 'assets/images/companies/solidarnost.svg',
     alt: 'Логотип Банк Солидарность',
