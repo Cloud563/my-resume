@@ -1,136 +1,21 @@
 <div class="resume-container">
-  <!-- Хедер -->
-  <header class="header">
-    <div class="profile-section">
-      <div class="profile-image">
-        <img src="assets/images/photo.JPG" alt="Олег Тарасов" class="photo" />
-      </div>
-
-      <div class="profile-info">
-        <div class="availability">
-          <div class="availability-dot"></div>
-          <span>Открыт для предложений о работе</span>
-        </div>
-
-        <h1 class="name">Олег Тарасов</h1>
-        <h2 class="position">Middle QA Automation</h2>
-
-        <div class="contacts">
-          <a
-            href="https://t.me/tarasovoa"
-            target="_blank"
-            class="contact-item telegram-item"
-            rel="noopener noreferrer"
-            aria-label="Telegram контакт tarasovoa"
-          >
-            <i class="fab fa-telegram icon"></i>
-            <span>tarasovoa</span>
-          </a>
-
-          <a href="tel:+79271244577" class="contact-item">
-            <i class="fas fa-phone icon"></i>
-            <span>+7 (927) 124-45-77</span>
-          </a>
-
-          <a
-            href="mailto:mnm6@mail.ru?subject=Предложение о работе&body=Здравствуйте! Пишу по поводу вашего резюме."
-            class="contact-item"
-          >
-            <i class="fas fa-envelope icon"></i>
-            <span>mnm6&#64;mail.ru</span>
-          </a>
-
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Саратов,Россия"
-            target="_blank"
-            class="contact-item"
-            rel="noopener noreferrer"
-            aria-label="Посмотреть на карте: Саратов, Россия"
-          >
-            <i class="fas fa-map-marker-alt icon"></i>
-            <span>Саратов, Россия</span>
-          </a>
-
-          <button
-            class="contact-item"
-            type="button"
-            aria-label="Перейти к разделу опыт работы"
-            (click)="scrollTo('experienceSection')"
-          >
-            <i class="fas fa-desktop icon"></i>
-            <span>14 лет опыта в IT</span>
-          </button>
-
-          <button
-            class="contact-item"
-            type="button"
-            aria-label="Перейти к разделу опыт работы"
-            (click)="scrollTo('experienceSection')"
-          >
-            <i class="fas fa-bug icon"></i>
-            <span>7 лет опыта QA</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Основной контент -->
+  <app-header
+    (scrollToExperience)="scrollTo('experienceSection')"
+    (openTelegram)="openTelegram()"
+    (openMap)="openMap()"
+  ></app-header>
   <main class="main-content">
     <div class="grid-layout">
-      <!-- Левая колонка -->
       <div class="left-column">
-        <!-- О себе -->
         <app-description [description]="description" (scrollToSection)="scrollTo($event)"> </app-description>
-
-        <!-- Желаемая должность -->
         <app-position (scrollToSection)="scrollTo($event)"></app-position>
-
-        <!-- Навыки -->
         <app-skills [skillsCategories]="skillsCategories" (scrollToSection)="scrollTo($event)"> </app-skills>
       </div>
-
-      <!-- Правая колонка -->
       <div class="right-column">
-        <!-- Опыт работы -->
         <app-experience [experiences]="experiences" (scrollToSection)="scrollTo($event)"> </app-experience>
-
-        <!-- Образование -->
         <app-education (scrollToSection)="scrollTo($event)"></app-education>
       </div>
     </div>
   </main>
-
-  <!-- Футер -->
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/Cloud563?tab=repositories" target="_blank" class="social-link">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
-        </a>
-        <a href="https://t.me/tarasovoa" target="_blank" class="social-link">
-          <i class="fab fa-telegram"></i>
-          <span>Telegram</span>
-        </a>
-        <a
-          href="https://hh.ru/applicant/resumes/view?resume=cb4e6b28ff01fabed70039ed1f564873747047"
-          target="_blank"
-          class="social-link"
-        >
-          <i class="fas fa-briefcase"></i>
-          <span>HeadHunter</span>
-        </a>
-        <a href="mailto:mnm6@mail.ru" class="social-link">
-          <i class="fas fa-envelope"></i>
-          <span>Email</span>
-        </a>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="copyright">© 2026 Олег Тарасов. Все права защищены.</div>
-      </div>
-    </div>
-  </footer>
+  <app-footer></app-footer>
 </div>

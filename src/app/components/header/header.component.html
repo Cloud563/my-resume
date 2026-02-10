@@ -1,0 +1,74 @@
+<header class="header">
+  <div class="profile-section">
+    <div class="profile-image">
+      <img src="assets/images/photo.JPG" alt="Олег Тарасов" class="photo" />
+    </div>
+
+    <div class="profile-info">
+      <div class="availability">
+        <div class="availability-dot"></div>
+        <span>Открыт для предложений о работе</span>
+      </div>
+
+      <h1 class="name">Олег Тарасов</h1>
+      <h2 class="position">Middle QA Automation</h2>
+
+      <div class="contacts">
+        <a
+          href="https://t.me/tarasovoa"
+          target="_blank"
+          class="contact-item telegram-item"
+          rel="noopener noreferrer"
+          aria-label="Telegram контакт tarasovoa"
+          (click)="onOpenTelegram()"
+        >
+          <i class="fab fa-telegram icon"></i>
+          <span>tarasovoa</span>
+        </a>
+
+        <a href="tel:+79271244577" class="contact-item">
+          <i class="fas fa-phone icon"></i>
+          <span>+7 (927) 124-45-77</span>
+        </a>
+
+        <a
+          href="mailto:mnm6@mail.ru?subject=Предложение о работе&body=Здравствуйте! Пишу по поводу вашего резюме."
+          class="contact-item"
+        >
+          <i class="fas fa-envelope icon"></i>
+          <span>mnm6&#64;mail.ru</span>
+        </a>
+
+        <button
+          class="contact-item"
+          type="button"
+          aria-label="Посмотреть на карте: Саратов, Россия"
+          (click)="onOpenMap()"
+        >
+          <i class="fas fa-map-marker-alt icon"></i>
+          <span>Саратов, Россия</span>
+        </button>
+
+        <button
+          class="contact-item"
+          type="button"
+          aria-label="Перейти к разделу опыт работы"
+          (click)="onScrollToExperience()"
+        >
+          <i class="fas fa-desktop icon"></i>
+          <span>14 лет опыта в IT</span>
+        </button>
+
+        <button
+          class="contact-item"
+          type="button"
+          aria-label="Перейти к разделу опыт работы"
+          (click)="onScrollToExperience()"
+        >
+          <i class="fas fa-bug icon"></i>
+          <span>7 лет опыта QA</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

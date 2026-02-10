@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { DescriptionComponent } from './components/description/description.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 import { PositionComponent } from './components/position/position.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { DESCRIPTION_DATA } from './data/description.data';
@@ -19,6 +21,8 @@ import { SKILLS_DATA } from './data/skills.data';
     EducationComponent,
     DescriptionComponent,
     PositionComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
