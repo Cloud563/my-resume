@@ -17,6 +17,9 @@
 
   .card-content {
     @include card-content-base;
+    padding: 14px;
+    margin-left: -6px;
+    margin-right: -8px;
 
     .experience-timeline {
       .experience-item {

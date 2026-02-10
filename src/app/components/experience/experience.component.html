@@ -18,11 +18,14 @@
       @for (exp of experiences; track exp) {
         <div class="experience-item">
           <div class="experience-header">
+            <span class="experience-period">{{ exp.period }}</span>
             <div>
               <img [src]="exp.logo" [alt]="exp.alt" class="company-logo" />
-              <h4>{{ exp.position }}</h4>
             </div>
-            <span class="experience-period">{{ exp.period }}</span>
+          </div>
+          <div>
+            <h4>{{ exp.name }}</h4>
+            <h4>{{ exp.position }}</h4>
           </div>
 
           <ul class="experience-list">
