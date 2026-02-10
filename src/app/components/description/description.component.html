@@ -1,0 +1,37 @@
+<section class="card" id="descriptionSection">
+  <div
+    class="card-header"
+    tabindex="0"
+    role="button"
+    aria-label="Перейти к разделу описание"
+    (keydown.enter)="scrollToSection.emit('descriptionSection')"
+    (click)="scrollToSection.emit('descriptionSection')"
+  >
+    <div class="card-icon">
+      <i class="fas fa-user"></i>
+    </div>
+    <h3 class="card-title">О себе</h3>
+  </div>
+
+  <div class="card-content">
+    @if (description) {
+      <div class="description-content">
+        <div class="text-block">
+          <p>{{ description.header }}</p>
+        </div>
+
+        <h4 class="section-title">Ключевые компетенции и достижения:</h4>
+
+        <ul class="bulleted-list">
+          @for (item of description.items; track item) {
+            <li>{{ item.item }}</li>
+          }
+        </ul>
+
+        <div class="text-block">
+          {{ description.footer }}
+        </div>
+      </div>
+    }
+  </div>
+</section>
