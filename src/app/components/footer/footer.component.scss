@@ -1,3 +1,7 @@
+:host {
+  display: block;
+}
+
 .footer {
   margin-top: 60px;
 
@@ -77,19 +81,19 @@
     padding: 20px 16px;
 
     .social-links {
-      gap: 12px;
+      gap: 14px;
 
       .social-link {
         flex: 0 0 calc(50% - 12px);
-        min-height: 90px;
-        padding: 12px;
+        min-height: 80px;
+        padding: 16px;
 
         i {
-          font-size: 20px;
+          font-size: 24px;
         }
 
         span {
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }

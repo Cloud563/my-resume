@@ -3,7 +3,9 @@
     (scrollToExperience)="scrollTo('experienceSection')"
     (openTelegram)="openTelegram()"
     (openMap)="openMap()"
-  ></app-header>
+  >
+  </app-header>
+
   <main class="main-content">
     <div class="grid-layout">
       <div class="left-column">
@@ -11,11 +13,13 @@
         <app-position (scrollToSection)="scrollTo($event)"></app-position>
         <app-skills [skillsCategories]="skillsCategories" (scrollToSection)="scrollTo($event)"> </app-skills>
       </div>
+
       <div class="right-column">
         <app-experience [experiences]="experiences" (scrollToSection)="scrollTo($event)"> </app-experience>
         <app-education (scrollToSection)="scrollTo($event)"></app-education>
       </div>
     </div>
   </main>
+
   <app-footer></app-footer>
 </div>
