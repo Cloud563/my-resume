@@ -20,7 +20,7 @@
 
     .experience-timeline {
       .experience-item {
-        padding: 20px;
+        padding: 2cqb;
         border-radius: 16px;
         background: rgba(30, 41, 59, 0.5);
         margin-bottom: 16px;
@@ -126,6 +126,8 @@
 
     .card-content {
       padding: 16px;
+      margin-left: -14px;
+      margin-right: -14px;
 
       .experience-header {
         flex-direction: column;
