@@ -92,7 +92,7 @@
         .contact-item {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 18px;
           padding: 12px 16px;
           background: rgba(30, 41, 59, 0.5);
           border-radius: 12px;
@@ -116,6 +116,7 @@
             height: 20px;
             color: #a855f7;
             font-size: 16px;
+            transform: translateY(2px);
           }
 
           span {
@@ -161,18 +162,6 @@
 
     .profile-info .contacts {
       grid-template-columns: 1fr;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .header .profile-section {
-    padding: 20px;
-
-    .profile-info .contacts .contact-item {
-      flex-direction: column;
-      text-align: center;
-      gap: 8px;
     }
   }
 }
