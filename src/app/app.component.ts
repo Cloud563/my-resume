@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { DescriptionComponent } from './components/description/description.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { PositionComponent } from './components/position/position.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { DESCRIPTION_DATA } from './data/description.data';
 import { EXPERIENCE_DATA } from './data/experience.data';
@@ -11,7 +12,14 @@ import { SKILLS_DATA } from './data/skills.data';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, ExperienceComponent, SkillsComponent, EducationComponent, DescriptionComponent],
+  imports: [
+    CommonModule,
+    ExperienceComponent,
+    SkillsComponent,
+    EducationComponent,
+    DescriptionComponent,
+    PositionComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

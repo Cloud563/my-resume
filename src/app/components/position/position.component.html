@@ -1,0 +1,40 @@
+<section class="card" id="positionSection">
+  <div
+    class="card-header"
+    tabindex="0"
+    role="button"
+    aria-label="Перейти к разделу желаемая позиция"
+    (keydown.enter)="scrollToSection.emit('positionSection')"
+    (click)="scrollToSection.emit('positionSection')"
+  >
+    <div class="card-icon">
+      <i class="fas fa-bullseye"></i>
+    </div>
+    <h3 class="card-title">Желаемая позиция</h3>
+  </div>
+
+  <div class="card-content">
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="info-label">Должность</span>
+        <span class="info-value highlight">Middle QA Automation</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Сфера</span>
+        <span class="info-value">Финтех, ГИС, Электронная коммерция</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Стек</span>
+        <span class="info-value">Playwright, TypeScript</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Зарплата</span>
+        <span class="info-value">от 200 000 ₽</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Формат работы</span>
+        <span class="info-value">Удаленно</span>
+      </div>
+    </div>
+  </div>
+</section>
